@@ -19,10 +19,6 @@ During network security hardening, we often encounter a "Rule Shadowing" issue:
    `.\Audit-NetworkPolicy.ps1 -Port 8080`
 3. Validate the results against your expected security posture.
 
-## A couple of screenshots
-![alt text](image.png)
-![alt text](image-1.png)
-
 ## Key Learnings
 - **Rule Precedence**: Process-level rules take precedence over port-level restrictions.
 - **Socket State**: Closing a rule does not terminate established socket connections; processes must be cycled for policy enforcement.
